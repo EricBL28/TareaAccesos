@@ -165,7 +165,6 @@ public class Main {
             System.out.println("Se ha añadido el cliente correctamente");
         }
     }
-
     public static void eliminarCliente(Connection conexion) throws SQLException {
         String elimnar="DELETE FROM clientes where nombre=(?)";
         PreparedStatement ps = conexion.prepareStatement(elimnar);
@@ -177,14 +176,12 @@ public class Main {
             System.out.println("Se ha eliminado el cliente correctamente");
         }
     }
-
     public static void realizarVenta(Connection conexion) throws SQLException {
         String realizarVen="DELETE FROM productos where nombre=(?)";
         PreparedStatement ps = conexion.prepareStatement(realizarVen);
             System.out.println("Se ha eliminado el cliente correctamente");
 
     }
-
     public static void ventaCliente(Connection conexion) throws SQLException {
         String ventaCli="DELETE FROM clientes where nombre=(?)";
         PreparedStatement ps = conexion.prepareStatement(ventaCli);
